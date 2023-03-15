@@ -1,14 +1,17 @@
+
+
+
 const http = require('http');
 const PORT = 5500
 
 
-const server = http.createServer((request, Response) =>{
+const server = http.createServer((req, res) =>{
   Response.end('Mi primer hola mundo en http')
 })
 
 
-app.get('/usuario', (request, response) =>{
-    response.send(
+app.get('/usuario', (req, res) =>{
+    res.send(
     {
         nombre: 'Juan Jose',
         apellido: 'Bascuñan',
